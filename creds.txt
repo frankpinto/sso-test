@@ -1,0 +1,4 @@
+Waqa576454
+https://samltoolkit.azurewebsites.net
+https://samltoolkit.azurewebsites.net/SAML/Consume/12320
+https://samltoolkit.azurewebsites.net/SAML/Login/12320
