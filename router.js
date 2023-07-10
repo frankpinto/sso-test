@@ -76,12 +76,12 @@ router.post('/login/sso/callback',
 );
 
 router.get('/', (req, res) => {
-  console.log(req);
-  res.writeHead(200);
-  if (req.user)
-    res.end(`Logged in w/ ID ${req.user.nameID}. This is the Homepage.`);
-  else
-    res.end('Not currently logged in. This is the Homepage.');
+  // console.log(req);
+  // res.writeHead(200);
+
+  res.render('index.html', {
+    user: req.user
+  });
 
   console.log("Homepage.");
 });

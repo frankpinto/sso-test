@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <% if (user) { %>
+    <p>Logged in w/ ID <%= user.nameID %>. This is the Homepage.</p>
+    <% } else { %>
+    <p>Not currently logged in. This is the Homepage. Go to <a href="/login">login</a></p>
+    <% } %>
+  </body>
+</html>
