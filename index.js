@@ -13,4 +13,4 @@ var options = {
 };
 
 console.log('Spinning up server...');
-https.createServer(options, app).listen(3500);
+https.createServer(options, app).listen(5500);

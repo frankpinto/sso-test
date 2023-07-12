@@ -12,6 +12,7 @@ const passport = require('./passportHandler.js');
 
 router.get('/login', (req, res) => {
   // res.writeHead(200);
+  res.set('Content-Security-Policy', `form-action https://onyx.dartbuilt.com:5500/login/sso ${process.env.SSO_ENTRYPOINT}`);
   res.render('login.html');
   // res.end('Login page');
 });
